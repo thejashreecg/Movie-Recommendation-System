@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;
+
+        /* font-weight: 400; */
+}
+body{
+    background-color: rgba(255, 255, 255, 0.091);
+    color: black;
+}
+
+/* navigatin bar  */
+nav{
+    background-color: #0C1844;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+/* .search_container{
+    gap: 15px;
+    
+} */
+.search_container input,button{
+    padding: 12px;
+    /* size: 5pz; */
+    border: none;
+    font-size: 16px;
+}
+.search_container input{
+    /* color: yellow; */
+    border-radius: 10px 0px 10px 3px;
+    font-size: 16px;
+    margin: 5px;
+    }
+.search_container button{
+        color: white;
+        background-color: #C80036;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius:  10px ;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        /* transition: all 3s; */
+}
+#search_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 50vh;
+    margin: auto;
+
+}
+.logo h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* main section  */
+.movie{
+    margin-block: 40px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    min-height: 69.5vh;
+    min-width: 70%;
+    margin:50px;
+
+}
+footer{
+    background-color: #FF6969;
+    color: #0C1844;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.movie{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 80v; */
+    background: #FFF5E1;
+    gap: 40ppx;
+    border-radius: 12px;
+    padding: 25px;   
+    box-shadow: 5px 5px 10px gray ;
+}
+
+.movie-info{
+    padding-inline: 10px;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #0C1844;
+    text-shadow: 6px 3px 3px rgb(255, 255, 255);
+    /* text-decoration:double; */
+    /* text-transform: uppercase; */
+}
+
+#poster{
+    height: 450px;
+    margin-right: 50px;
+    border-radius: 5% 0% 0% 5% ;
+}
+#rating{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.movie-genre{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    overflow-x: auto;
+    /* background-color: blueviolet; */
+}
+.movie-info .movie-genre p{
+    background-color: #4b5269;
+    font-size: 20px;
+    margin-block: 15px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 3px;
+    
+    color: white;
+}
+
+.movie-info p{
+    line-height: 33px;
+    font-size: 20px;
+}
+#plot{
+    line-height: 20px;
+    margin-top: 8px;
+}
+.movie.nobackground{
+    background :none;
+    box-shadow: none;
+}
+
+/* ADDING RESPONSIVENESS*/
+
+@media screen and (max-width:900px) {
+    .movie{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .movie .movie-poster img{
+        width: 100%;
+        height: fit-content;
+        /* display: grid; */
+        justify-content: center;
+        align-items: center;    
+}
+#poster{
+    border-radius: 15px;
+}
+}
+
+@media screen and (max-width:630px) {
+    .navbar{
+    flex-direction: column;
+    }
+    form{
+        margin: 5px;
+    }
+    .movie-info{
+        padding: 15px;
+    }
+}
+
+/* email:omkarpatil3821@gmail.com */
